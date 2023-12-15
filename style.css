@@ -1,0 +1,88 @@
+body {
+    background-image: url(/images/Flag.jpg);
+}
+
+a {
+    color: rgba(0, 0, 255, 0.623);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.myGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 75px;
+    column-gap: 10px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.myGridItem {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.66);
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.carousel-item img {
+    width: 500px;
+    height: 500px;
+    max-height: 245px;
+    margin: auto;
+    margin-bottom: 50px;
+    display: block;
+    border: solid thin white;
+}
+
+.myGridItem img {
+    margin-top: 10px;
+}
+
+.myGrid div:nth-child(9),
+.myGrid div:nth-child(10),
+.myGrid div:nth-child(11),
+.myGrid div:nth-child(12) {
+    margin-bottom: 75px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    padding: 1%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer div:nth-child(2) {
+    text-align: center;
+}
+
+.footer div:nth-child(3) {
+    text-align: right;
+}
+
+@media screen and (max-width: 599px) {
+    .myGrid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    .myGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
